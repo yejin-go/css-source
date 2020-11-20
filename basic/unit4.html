@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* % : 부모가 만들어 준 공간에서의 비율
+         vw, vh : viewport width, height (브라우저의 너비 기준으로 %) 
+         */
+      /* html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+      } */
+      p {
+        background: cornsilk;
+        font-size: 1em;
+        /* width: 100%; /* body 기준으로 100%를 의미함 
+        height: 50%; */
+        width: 100vw;
+        height: 50vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 기본 문법</h1>
+    <h2>길이</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, fugit
+      nihil beatae, labore excepturi repellendus eius, quam qui dicta
+      voluptatibus recusandae explicabo impedit dolores nobis quas est repellat
+      sint iure?
+    </p>
+  </body>
+</html>
+
+<!-- 
+    css 에서의 단위
+px : 고정값(화면 해상도에 영향을 받음 - 해상도에 따라서 달라짐... 더 크거나 작거나)
+% : 부모 요소에 영향을 받음
+em : 자기 자신의 font size에 영향을 받음
+rem : 최종 단위의 조상 태그( :root )에 영향을 받음
+vw, vh : viewpoint에 영향을 받음
+-->

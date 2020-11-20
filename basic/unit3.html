@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 13px;
+      }
+      .box {
+        float: left;
+        /* width: 100px;
+        height: 100px; */
+        background-color: blue;
+        color: #fff;
+        text-align: center;
+        margin-right: 20px;
+      }
+      .box_px {
+        width: 160px;
+        height: 160px;
+      }
+      .box_em {
+        width: 10em; /*12px*10*/
+        height: 10em;
+      }
+      .box_rem {
+        width: 10rem; /*13px*10*/
+        height: 10rem;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 기본 문법</h1>
+    <h2>길이</h2>
+    <div class="wrapper clearfix">
+      <!-- div.wrapper.clearfix -->
+      <div class="box box_px">PX</div>
+      <div class="box box_em">EM</div>
+      <div class="box box_rem">REM</div>
+    </div>
+    <!-- <div id="main"></div> div#main -->
+  </body>
+</html>
